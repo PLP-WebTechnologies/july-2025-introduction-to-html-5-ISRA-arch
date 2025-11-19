@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enhanced Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        header, footer {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        main {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 800px;
+            margin: auto;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+            border-collapse: collapse;
+            padding: 8px;
+        }
+        table {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        form {
+            display: grid;
+            gap: 12px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select, textarea {
+            padding: 8px;
+            width: 100%;
+            border-radius: 4px;
+            border: 1px solid #aaa;
+        }
+        .form-section {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Enhanced HTML5 Form Page</h1>
+</header>
+
+<main>
+    <section>
+        <h2>Information Overview</h2>
+        <p>This page includes structured content using lists, a table, and media, followed by a complete HTML5 form.</p>
+
+        <h3>List of Topics Covered</h3>
+        <ul>
+            <li>HTML5 semantic structure</li>
+            <li>Tables and lists</li>
+            <li>Media embedding</li>
+            <li>Accessible and validated forms</li>
+        </ul>
+
+        <h3>Sample Data Table</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Course</th>
+                    <th>Duration</th>
+                    <th>Level</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Web Development</td>
+                    <td>3 Months</td>
+                    <td>Beginner</td>
+                </tr>
+                <tr>
+                    <td>Data Engineering</td>
+                    <td>6 Months</td>
+                    <td>Intermediate</td>
+                </tr>
+                <tr>
+                    <td>Economics</td>
+                    <td>4 Months</td>
+                    <td>Advanced</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Embedded Media</h3>
+        <figure>
+            <img src="https://via.placeholder.com/600x200" alt="Sample Banner" style="width:100%; border-radius:6px;">
+            <figcaption>A sample placeholder image included as media.</figcaption>
+        </figure>
+    </section>
+
+    <section class="form-section">
+        <h2>Registration Form</h2>
+
+        <form action="#" method="post" autocomplete="on">
+            <div>
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required />
+            </div>
+
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="example@mail.com" required autocomplete="email" />
+            </div>
+
+            <div>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Create a password" required minlength="6" />
+            </div>
+
+            <div>
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age" min="18" max="70" required />
+            </div>
+
+            <div>
+                <label for="country">Country</label>
+                <select id="country" name="country" required>
+                    <option value="" disabled selected>Select your country</option>
+                    <option value="Sudan">Sudan</option>
+                    <option value="Qatar">Qatar</option>
+                    <option value="UK">United Kingdom</option>
+                </select>
+            </div>
+
+            <div>
+                <label>Preferred Track</label>
+                <div>
+                    <input type="radio" id="web" name="track" value="Web Development" required />
+                    <label for="web">Web Development</label>
+                </div>
+                <div>
+                    <input type="radio" id="data" name="track" value="Data Engineering" />
+                    <label for="data">Data Engineering</label>
+                </div>
+                <div>
+                    <input type="radio" id="eco" name="track" value="Economics" />
+                    <label for="eco">Economics</label>
+                </div>
+            </div>
+
+            <div>
+                <label for="skills">Skills (Select all that apply)</label><br>
+                <input type="checkbox" id="html" name="skills" value="HTML"> HTML
+                <input type="checkbox" id="css" name="skills" value="CSS"> CSS
+                <input type="checkbox" id="js" name="skills" value="JavaScript"> JavaScript
+            </div>
+
+            <div>
+                <label for="bio">Short Bio</label>
+                <textarea id="bio" name="bio" placeholder="Tell us about yourself..." required></textarea>
+            </div>
+
+            <div>
+                <label for="readonly">Referral Code</label>
+                <input type="text" id="readonly" value="AUTO-GENERATED" readonly />
+            </div>
+
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Enhanced Form Example</p>
+</footer>
+
+</body>
+</html>
